@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siddhesh Rane</title>
+    <link>https://SiddheshRane.github.io</link>
+    <atom:link href="https://SiddheshRane.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    <description>My personal blog about tech</description>
+    <language>en-gb</language>
+    <pubDate>Mon, 12 Jun 2017 23:01:41 +0530</pubDate>
+    <lastBuildDate>Mon, 12 Jun 2017 23:01:41 +0530</lastBuildDate>
+
+    <item>
+      <title>My First Blog</title>
+      <link>https://SiddheshRane.github.io/my-first-blog.html</link>
+      <pubDate>Tue, 6 Jun 2017 00:00:00 +0530</pubDate>
+      <guid isPermaLink="false">my-first-blog.html</guid>
+      <description><p>I was never really into blogging. Even today it&#8217;s not the conventional aspects of blogging that has got me started with one.
+In this post I will explore why I chose a static blog over the obvious choice of a Wordpress one.</p></description>	  
+    </item>
+
+  </channel> 
+</rss>
