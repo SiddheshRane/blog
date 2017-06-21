@@ -56,4 +56,4 @@ You never know there is something you might like doing until you try it. Jekyll 
 
 === An Ironical Twist
 
-If you scroll down to the bottom of this page you'll notice that the site is baked with JBake. This is *not* a Jekyll generated site! JBake is an alternative static site generator that is also blog aware. Why I ditched Jekyll to go with something else is for another blog post.
+If you scroll down to the bottom of this page you'll notice that the site is baked with JBake. This is *not* a Jekyll generated site! JBake is an alternative static site generator that is also blog aware. Why I ditched Jekyll to go with something else is for another link:why-jbake.html[blog post].

@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="utf-8">
-        <title>My First Blog</title>
+        <title>Jekyll vs JBake</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="My personal blog about tech">
         <meta name="author" content="Siddhesh Rane">
@@ -66,13 +66,14 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                         <div class="post-heading">
-                            <h1>My First Blog</h1>
+                            <h1>Jekyll vs JBake</h1>
                             
                             <span class="meta">Posted by <b>Siddhesh Rane</b> on 
-                                June 06, 2017
+                                June 21, 2017
                                 <span> Tags: 
                                     <span> 
                                         <a href="tags/blog.html" class="" >blog</a></span><span> 
+                                        <a href="tags/jbake.html" class="" >jbake</a></span><span> 
                                         <a href="tags/jekyll.html" class="" >jekyll</a></span> 
                                 </span>
                             </span>
@@ -89,81 +90,108 @@
                     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>I was never really into blogging. Even today it&#8217;s not the conventional aspects of blogging that has got me started with one.
-In this post I will explore why I chose a static blog over the obvious choice of a Wordpress one.</p>
+<p>In my <a href="my-first-blog.html">previous</a> blog post I talked about how <a href="https://jekyllrb.com">Jekyll</a> got me into blogging but still ditched it in favour of <a href="http://jbake.org">JBake</a>
+In this post I&#8217;ll summarize all the important architectural differences between Jekyll and JBake and the factors that made me choose JBake.</p>
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_me_and_blogs">Me and Blogs</h3>
-<div class="quoteblock">
-<blockquote>
+<div class="sect1">
+<h2 id="_a_note_about_static_site_generators">A Note About Static Site Generators</h2>
+<div class="sectionbody">
 <div class="paragraph">
-<p>Books are a man&#8217;s best friend. Mine are blogs.</p>
-</div>
-</blockquote>
-</div>
-<div class="paragraph">
-<p>I used to read a lot of technical blogs that I came across through google searches. Once I landed on a blog and liked it I would also read related posts. Blogs were a very valuable source of information, much more so than books. They were convenient in that they were concise, to the point and conveyed information in simple terms. They introduced you to new technologies, people, current trends and aspects of software development beyond coding.</p>
+<p>One of the things I like about static site generators is the ability to write content in more human readable/writable formats like <code>markdown</code> and <code>asciidoc</code> and then mix it with layouts of your site.
+This way your site&#8217;s content isn&#8217;t tied to its presentation, which can be changed with themes.
+I&#8217;m a big proponent and enthusiast of themeability.</p>
 </div>
 <div class="paragraph">
-<p>In short I enjoyed <em>reading</em> blogs, but that didn&#8217;t get me into <em>writing</em> one.
-So what was it that I wanted?</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_a_website">A Website!</h3>
-<div class="paragraph">
-<p>A blog couldn&#8217;t excite me as much as a website did. A website could look as you wanted, have pages and features you could think of.
-I wanted a website to be my profile, business card, CV, a documentation of my projects and everything I felt like putting on the web, but in a differentiated way, under a resource identifiable with my name. I wanted a personal website.</p>
-</div>
-<div class="paragraph">
-<p>To have a website you need two things: a domain name and a hosting service. Both options cost money on a regular basis, which however small was not suitable for a student like me who had no web development skills nor the time for regular maintenance.
-I had briefly considered creating a Wordpress blog because that was the easy route. But I didnt get a website URL with my name in it. So I dropped the whole plan.</p>
-</div>
-<div class="paragraph">
-<p>The idea of a website went from the back of my head to the brink of oblivion.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_from_oblivion_to_obsession">From Oblivion to Obsession</h3>
-<div class="paragraph">
-<p>The idea hadn&#8217;t died, just remained dormant. It resurfaced when I read about <a href="https://pages.github.com">Github Pages</a>. Github Pages had two very important things at offer</p>
+<p>In basic principle of operation, all static site generators perform the task of taking markup content or raw html and mixing it with appropriate html templates to render final html site. The differences between the various static site generators available is in terms of support for</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>It provides a cdn like hosting service where you can publish an entire static website. Static doesn&#8217;t mean plain boring wiki pages. You can have completly interactive HTML5 webapps. Just no server side code.</p>
+<p>markup formats</p>
 </li>
 <li>
-<p>The default URL for your website is username.github.io which in my case becomes
-<a href="https://SiddheshRane.github.io">SiddheshRane.github.io</a>
-This was crucial. The URL had my exact name in it. It wasn&#8217;t <a href="https://github.com/SiddheshRane">github.com/SiddheshRane</a> that would make my website a mere page under github nor was it some ww2.0xsiddhesh-rane3.unkownhost.com.
-The URL has the perfect structure. Begins with my name, followed by github which is cool and ends in <code>.io</code> which is even cooler. There is something very <em>develeperish</em> about <code>.io</code></p>
+<p>template types and rendering engines</p>
+</li>
+<li>
+<p>extra features like tags, feeds, archive, data files</p>
+</li>
+<li>
+<p>plugins</p>
+</li>
+<li>
+<p>flexibility of site structure and content</p>
 </li>
 </ul>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_the_differences_explained">The Differences Explained</h2>
+<div class="sectionbody">
 <div class="paragraph">
-<p>And then there were all those awesome gh-pages that other github projects had, it all got me very excited and really inspired.</p>
+<p>I&#8217;m not going to do a very detailed feature by feature comparison. This is about the things that came across my way as a noob and changed my options. Jekyll&#8217;s plugin functionality means there will always be some plugin to fill a void for whatever is missing.
+What I&#8217;m going to talk about though is the core architectural differences because these can hardly be undone and make a lot of difference.</p>
+</div>
+<div class="sect2">
+<h3 id="_naming_scheme_and_folder_structure">Naming Scheme and Folder Structure</h3>
+<div class="paragraph">
+<p>Jekyll imposes a strict naming scheme for your posts: <code>YEAR-MONTH-DAY-title.MARKUP</code>.
+The date here can be overridden in the YAML front matter though, so this requirement feels rather redundant.
+These posts all have to reside in the <code>_posts</code> folder without sub folders. Their output location depends on the <code>permalink</code> variable in front matter. Similarly drafts go in <code>_drafts</code> folder. All other files go anywhere else and maintain their folder structure in the output.</p>
 </div>
 <div class="paragraph">
-<p>So basically I chose Github Pages and a static website was the consequence.</p>
+<p>JBake doesn&#8217;t impose any naming scheme.
+In JBake all types of content goes in the <code>content</code> folder with whatever hierarchy you want which is retained in the output, along with file names. Posts and Pages are distinguished by <code>type</code> field and drafts are indicated by <code>status</code> field in front matter.
+The advantages are:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The source folder gives a complete picture of the output.</p>
+</li>
+<li>
+<p>File names become permalinks.</p>
+</li>
+<li>
+<p>The folder structure is not tied to JBake.</p>
+</li>
+</ul>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_from_website_to_blog">From Website to Blog?</h3>
+<h3 id="_templates">Templates</h3>
 <div class="paragraph">
-<p>Github Pages introduced me to <a href="https://jekyllrb.com">Jekyll</a>, a static site generator that is blog aware. Jekyll captivated me because their website is simply beautiful and so concise. While I was reading their documentation I was adoring that dark theme, that easy on the eyes typography and those banners conveying important information, like in asciidoc.</p>
+<p>Jekyll uses Liquid template engine by default. The templates for mixing content with html are contained in <code>_layouts</code> folder. But the html fragments that get included in layouts are contained in <code>_includes</code> folder in the site root. Two folders doing one job is clutter to me. This is the default configuration which I think can be changed to point them both to the same folder.</p>
 </div>
 <div class="paragraph">
-<p>Jekyll&#8217;s eye candy made me try it out. And since their tutorial was blog oriented I ended up going the same route.
-You never know there is something you might like doing until you try it. Jekyll was that thing. It got me into blogging.</p>
+<p>JBake keeps templates outside the <code>content</code> directory in <code>templates</code> folder. It supports FreeMarker, Thymeleaf, Groovy and Jade. If you need to port an existing template Thymeleaf is an excellent choice. I have used it to create the <a href="https://SiddheshRane.github.io/jbake-clean-blog-template">theme</a> for this blog. For greater power you can use Groovy.</p>
+</div>
+<div class="paragraph">
+<p>The default template in Jekyll uses absolute addresses so you&#8217;ll have to run in server to render properly. JBake uses relative addresses so simply opening the index.html file will work too. Although this is a minor caveat it still was important for me.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_an_ironical_twist">An Ironical Twist</h3>
+<h3 id="_plugins">Plugins</h3>
 <div class="paragraph">
-<p>If you scroll down to the bottom of this page you&#8217;ll notice that the site is baked with JBake. This is <strong>not</strong> a Jekyll generated site! JBake is an alternative static site generator that is also blog aware. Why I ditched Jekyll to go with something else is for another <a href="why-jbake.html">blog post</a>.</p>
+<p>JBake doesn&#8217;t have plugin functionality yet. It&#8217;s in the making.
+Jekyll uses Ruby gems as plugins. In many themes I got plugin errors even with <code>bundle exec</code>. Sometimes a specific revision of a plugin wasn&#8217;t available at a Github repo. I came across too many such instances and then finally gave up trying. A Ruby guy might find his way but I wasn&#8217;t interested in trying.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_summary">Summary</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>I must confess that I searched for JBake before I had been even half way into learning Jekyll. Being a Java developer I felt compelled to find an alternative that ran on the JVM. Although I didn&#8217;t look into JBake until I encountered these caveats in my local Jekyll blog.</p>
+</div>
+<div class="paragraph">
+<p>Overall Jekyll imposes a lot of its own baggage onto your content in terms of folder structure, post naming, and too many folders.
+JBake is not as powerful as Jekyll yet but it is also not that intrusive. Further JBake has out-of-the-box support for highly varied template engines.
+I must point out that there are alternatives such as <a href="http://gohugo.io">Hugo</a>, <a href="https://blog.getpelican.com">Pelican</a> and others. I briefly looked at them. Hugo is also as powerful and intrusive as Jekyll. Pelican seemed more flexible. In a future post I plan to compare all the mainstream static site generators to highlight their main differences.</p>
+</div>
 </div>
 </div></div>
                 </div>
@@ -176,8 +204,8 @@ You never know there is something you might like doing until you try it. Jekyll 
                             <script>
                                 var disqus_shortname = "siddheshrane";
                                 var disqus_config = function () {
-                                    this.page.url = "https://SiddheshRane.github.io/my-first-blog.html";
-                                    this.page.identifier = "./content/my-first-blog.adoc";
+                                    this.page.url = "https://SiddheshRane.github.io/why-jbake.html";
+                                    this.page.identifier = "./content/why-jbake.adoc";
                                 };
                                 (function () { // DON'T EDIT BELOW THIS LINE
                                     var d = document, s = d.createElement('script');

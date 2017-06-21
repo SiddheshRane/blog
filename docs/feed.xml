@@ -6,10 +6,17 @@
     <atom:link href="https://SiddheshRane.github.io/feed.xml" rel="self" type="application/rss+xml" />
     <description>My personal blog about tech</description>
     <language>en-gb</language>
-    <pubDate>Thu, 15 Jun 2017 21:25:06 +0530</pubDate>
-    <lastBuildDate>Thu, 15 Jun 2017 21:25:06 +0530</lastBuildDate>
+    <pubDate>Wed, 21 Jun 2017 21:38:45 +0530</pubDate>
+    <lastBuildDate>Wed, 21 Jun 2017 21:38:45 +0530</lastBuildDate>
 
     <item>
+      <title>Jekyll vs JBake</title>
+      <link>https://SiddheshRane.github.io/why-jbake.html</link>
+      <pubDate>Wed, 21 Jun 2017 00:00:00 +0530</pubDate>
+      <guid isPermaLink="false">why-jbake.html</guid>
+      <description><p>In my <a href="my-first-blog.html">previous</a> blog post I talked about how <a href="https://jekyllrb.com">Jekyll</a> got me into blogging but still ditched it in favour of <a href="http://jbake.org">JBake</a>
+In this post I&#8217;ll summarize all the important architectural differences between Jekyll and JBake and the factors that made me choose JBake.</p></description>	  
+    </item><item>
       <title>My First Blog</title>
       <link>https://SiddheshRane.github.io/my-first-blog.html</link>
       <pubDate>Tue, 6 Jun 2017 00:00:00 +0530</pubDate>
