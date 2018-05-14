@@ -4,10 +4,9 @@ Siddhesh Rane
 :jbake-type: page
 :jbake-status: published
 
-My name is Siddhesh Rane, a student from Pune, India.
-I am a computer programmer by hobby and education.
+I am Siddhesh Rane, a student from Pune, India.
 
-My dev stack includes Java 8, JavaFX, HTML5 static sites, Netbeans 8.2 on Linux Mint cinnamon 17.3.
-
-I love both front end and back end technologies.
+I love full stack application development, theme designing and blogging.
+I have done UI development in JavaFX and HTML and currently into distributed computing and databases.
+I have tried my hands at natural language processing and see a future for it in the semantic web rather than deep learning. 
 I talk in English, Hindi, Marathi and technical jargon!

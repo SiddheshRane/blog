@@ -9,16 +9,33 @@
         <meta name="author" content="Siddhesh Rane">
         <!--<meta name="keywords" content="" th:if="${content.tags != null}" th:content="${#strings.listJoin(content.tags, ' , ')} ?: '' ">-->
         <meta name="generator" content="JBake">
-
+        
+        <!--Facebook Card-->
+		<meta property="og:type" content="article" />
+		<meta property="og:title"  content="My First Blog" />
+		<meta property="og:description" content="My personal blog about tech"/>
+		<meta property="og:image" content="http://localhost:8820/img/yosemite.jpg" />
+        
+        <!--Twitter card -->
+        
+        <meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="My First Blog">
+		<meta name="twitter:creator" content="@unrealSiddhesh">
+		<meta name="twitter:description" content="My personal blog about tech">
+		<meta name="twitter:image" content="http://localhost:8820/img/yosemite.jpg">
+		</th:if>
         <!-- Bootstrap Core CSS -->
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
         <!-- Theme CSS -->
-        <link href="css/clean-blog.min.css" rel="stylesheet">
-
+        <link href="css/coderay.css" rel="stylesheet">
+        <link href="css/asciidoctor.css" rel="stylesheet">
+        <link href="css/clean-blog.css" rel="stylesheet">
         <!-- Custom Fonts -->
         <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
         <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Lato:300&amp;text=Siddhesh%20Rane'
+           rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -27,7 +44,7 @@
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
 
-        <link rel="shortcut icon" href="favicon.ico"/>
+        <link rel="shortcut icon" href="favicon.png"/>
     </head>
 
     <body>
@@ -47,6 +64,9 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
                         <li>
+                            <a href="get-theme.html">Get Theme</a>
+                        </li>
+                        <li>
                             <a href="about.html">About Me</a>
                         </li>
                         
@@ -61,7 +81,7 @@
 
         <!-- Page Header -->
         <!-- Set your background image for this header on the line below. -->
-        <header class="intro-header" style="background-image: url(&#39;img/yosemite.jpg&#39;) ; background-color:#101010">
+        <header class="intro-header" style="background-image: url(&#39;img/index-cover.jpg&#39;) ; background-color:#101010">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -70,6 +90,7 @@
                             
                             <span class="meta">Posted by <b>Siddhesh Rane</b> on 
                                 June 06, 2017
+                                </br>
                                 <span> Tags: 
                                     <span> 
                                         <a href="tags/blog.html" class="" >blog</a></span><span> 
@@ -86,107 +107,80 @@
         <article>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><div id="preamble">
-<div class="sectionbody">
-<div class="paragraph">
-<p>I was never really into blogging. Even today it&#8217;s not the conventional aspects of blogging that has got me started with one.
-In this post I will explore why I chose a static blog over the obvious choice of a Wordpress one.</p>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_me_and_blogs">Me and Blogs</h3>
-<div class="quoteblock">
-<blockquote>
-<div class="paragraph">
-<p>Books are a man&#8217;s best friend. Mine are blogs.</p>
-</div>
-</blockquote>
-</div>
-<div class="paragraph">
-<p>I used to read a lot of technical blogs that I came across through google searches. Once I landed on a blog and liked it I would also read related posts. Blogs were a very valuable source of information, much more so than books. They were convenient in that they were concise, to the point and conveyed information in simple terms. They introduced you to new technologies, people, current trends and aspects of software development beyond coding.</p>
-</div>
-<div class="paragraph">
-<p>In short I enjoyed <em>reading</em> blogs, but that didn&#8217;t get me into <em>writing</em> one.
-So what was it that I wanted?</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_a_website">A Website!</h3>
-<div class="paragraph">
-<p>A blog couldn&#8217;t excite me as much as a website did. A website could look as you wanted, have pages and features you could think of.
-I wanted a website to be my profile, business card, CV, a documentation of my projects and everything I felt like putting on the web, but in a differentiated way, under a resource identifiable with my name. I wanted a personal website.</p>
-</div>
-<div class="paragraph">
-<p>To have a website you need two things: a domain name and a hosting service. Both options cost money on a regular basis, which however small was not suitable for a student like me who had no web development skills nor the time for regular maintenance.
-I had briefly considered creating a Wordpress blog because that was the easy route. But I didnt get a website URL with my name in it. So I dropped the whole plan.</p>
-</div>
-<div class="paragraph">
-<p>The idea of a website went from the back of my head to the brink of oblivion.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_from_oblivion_to_obsession">From Oblivion to Obsession</h3>
-<div class="paragraph">
-<p>The idea hadn&#8217;t died, just remained dormant. It resurfaced when I read about <a href="https://pages.github.com">Github Pages</a>. Github Pages had two very important things at offer</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>It provides a cdn like hosting service where you can publish an entire static website. Static doesn&#8217;t mean plain boring wiki pages. You can have completly interactive HTML5 webapps. Just no server side code.</p>
-</li>
-<li>
-<p>The default URL for your website is username.github.io which in my case becomes
-<a href="https://SiddheshRane.github.io">SiddheshRane.github.io</a>
-This was crucial. The URL had my exact name in it. It wasn&#8217;t <a href="https://github.com/SiddheshRane">github.com/SiddheshRane</a> that would make my website a mere page under github nor was it some ww2.0xsiddhesh-rane3.unkownhost.com.
-The URL has the perfect structure. Begins with my name, followed by github which is cool and ends in <code>.io</code> which is even cooler. There is something very <em>develeperish</em> about <code>.io</code></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>And then there were all those awesome gh-pages that other github projects had, it all got me very excited and really inspired.</p>
-</div>
-<div class="paragraph">
-<p>So basically I chose Github Pages and a static website was the consequence.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_from_website_to_blog">From Website to Blog?</h3>
-<div class="paragraph">
-<p>Github Pages introduced me to <a href="https://jekyllrb.com">Jekyll</a>, a static site generator that is blog aware. Jekyll captivated me because their website is simply beautiful and so concise. While I was reading their documentation I was adoring that dark theme, that easy on the eyes typography and those banners conveying important information, like in asciidoc.</p>
-</div>
-<div class="paragraph">
-<p>Jekyll&#8217;s eye candy made me try it out. And since their tutorial was blog oriented I ended up going the same route.
-You never know there is something you might like doing until you try it. Jekyll was that thing. It got me into blogging.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_an_ironical_twist">An Ironical Twist</h3>
-<div class="paragraph">
-<p>If you scroll down to the bottom of this page you&#8217;ll notice that the site is baked with JBake. This is <strong>not</strong> a Jekyll generated site! JBake is an alternative static site generator that is also blog aware. Why I ditched Jekyll to go with something else is for another <a href="why-jbake.html">blog post</a>.</p>
-</div>
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><div id="preamble"> 
+ <div class="sectionbody"> 
+  <div class="paragraph"> 
+   <p>I was never really into blogging. Even today it’s not the conventional aspects of blogging that has got me started with one. In this post I will explore why I chose a static blog over the obvious choice of a Wordpress one.</p> 
+  </div> 
+ </div> 
+</div> 
+<div class="sect2"> 
+ <h3 id="_me_and_blogs">Me and Blogs</h3> 
+ <div class="quoteblock"> 
+  <blockquote> 
+   <div class="paragraph"> 
+    <p>Books are a man’s best friend. Mine are blogs.</p> 
+   </div> 
+  </blockquote> 
+ </div> 
+ <div class="paragraph"> 
+  <p>I used to read a lot of technical blogs that I came across through google searches. Once I landed on a blog and liked it I would also read related posts. Blogs were a very valuable source of information, much more so than books. They were convenient in that they were concise, to the point and conveyed information in simple terms. They introduced you to new technologies, people, current trends and aspects of software development beyond coding.</p> 
+ </div> 
+ <div class="paragraph"> 
+  <p>In short I enjoyed <em>reading</em> blogs, but that didn’t get me into <em>writing</em> one. So what was it that I wanted?</p> 
+ </div> 
+</div> 
+<div class="sect2"> 
+ <h3 id="_a_website">A Website!</h3> 
+ <div class="paragraph"> 
+  <p>A blog couldn’t excite me as much as a website did. A website could look as you wanted, have pages and features you could think of. I wanted a website to be my profile, business card, CV, a documentation of my projects and everything I felt like putting on the web, but in a differentiated way, under a resource identifiable with my name. I wanted a personal website.</p> 
+ </div> 
+ <div class="paragraph"> 
+  <p>To have a website you need two things: a domain name and a hosting service. Both options cost money on a regular basis, which however small was not suitable for a student like me who had no web development skills nor the time for regular maintenance. I had briefly considered creating a Wordpress blog because that was the easy route. But I didnt get a website URL with my name in it. So I dropped the whole plan.</p> 
+ </div> 
+ <div class="paragraph"> 
+  <p>The idea of a website went from the back of my head to the brink of oblivion.</p> 
+ </div> 
+</div> 
+<div class="sect2"> 
+ <h3 id="_from_oblivion_to_obsession">From Oblivion to Obsession</h3> 
+ <div class="paragraph"> 
+  <p>The idea hadn’t died, just remained dormant. It resurfaced when I read about <a href="https://pages.github.com">Github Pages</a>. Github Pages had two very important things at offer</p> 
+ </div> 
+ <div class="ulist"> 
+  <ul> 
+   <li> <p>It provides a cdn like hosting service where you can publish an entire static website. Static doesn’t mean plain boring wiki pages. You can have completly interactive HTML5 webapps. Just no server side code.</p> </li> 
+   <li> <p>The default URL for your website is username.github.io which in my case becomes <a href="https://SiddheshRane.github.io">SiddheshRane.github.io</a> This was crucial. The URL had my exact name in it. It wasn’t <a href="https://github.com/SiddheshRane">github.com/SiddheshRane</a> that would make my website a mere page under github nor was it some ww2.0xsiddhesh-rane3.unkownhost.com. The URL has the perfect structure. Begins with my name, followed by github which is cool and ends in <code>.io</code> which is even cooler. There is something very <em>develeperish</em> about <code>.io</code></p> </li> 
+  </ul> 
+ </div> 
+ <div class="paragraph"> 
+  <p>And then there were all those awesome gh-pages that other github projects had, it all got me very excited and really inspired.</p> 
+ </div> 
+ <div class="paragraph"> 
+  <p>So basically I chose Github Pages and a static website was the consequence.</p> 
+ </div> 
+</div> 
+<div class="sect2"> 
+ <h3 id="_from_website_to_blog">From Website to Blog?</h3> 
+ <div class="paragraph"> 
+  <p>Github Pages introduced me to <a href="https://jekyllrb.com">Jekyll</a>, a static site generator that is blog aware. Jekyll captivated me because their website is simply beautiful and so concise. While I was reading their documentation I was adoring that dark theme, that easy on the eyes typography and those banners conveying important information, like in asciidoc.</p> 
+ </div> 
+ <div class="paragraph"> 
+  <p>Jekyll’s eye candy made me try it out. And since their tutorial was blog oriented I ended up going the same route. You never know there is something you might like doing until you try it. Jekyll was that thing. It got me into blogging.</p> 
+ </div> 
+</div> 
+<div class="sect2"> 
+ <h3 id="_an_ironical_twist">An Ironical Twist</h3> 
+ <div class="paragraph"> 
+  <p>If you scroll down to the bottom of this page you’ll notice that the site is baked with JBake. This is <strong>not</strong> a Jekyll generated site! JBake is an alternative static site generator that is also blog aware. Why I ditched Jekyll to go with something else is for another <a href="why-jbake.html">blog post</a>.</p> 
+ </div> 
 </div></div>
                 </div>
             </div>
         </article>
         <hr/>
         <div class="container"><div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    
-                            <div id="disqus_thread"></div>
-                            <script>
-                                var disqus_shortname = "siddheshrane";
-                                var disqus_config = function () {
-                                    this.page.url = "https://SiddheshRane.github.io/my-first-blog.html";
-                                    this.page.identifier = "./content/my-first-blog.adoc";
-                                };
-                                (function () { // DON'T EDIT BELOW THIS LINE
-                                    var d = document, s = d.createElement('script');
-                                    s.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
-                                    s.setAttribute('data-timestamp', +new Date());
-                                    (d.head || d.body).appendChild(s);
-                                })();
-                            </script>
-                        </div></div></div>
+                    </div></div></div>
         <!-- Footer -->
         <footer>
             <div class="container">
@@ -226,7 +220,7 @@ You never know there is something you might like doing until you try it. Jekyll 
                                 </a>
                             </li>
                         </ul>
-                        <p class="copyright text-muted">&copy;  <span>Siddhesh Rane</span> <span>2017</span> | Clean Blog theme by <a href="https://startbootstrap.com/template-overviews/clean-blog/">Start Bootstrap</a> | Baked with <a href="http://jbake.org">JBake <span>v2.5.1</span></a></p>
+                        <p class="copyright text-muted">&copy;  <span>Siddhesh Rane</span> <span>2018</span> | Clean Blog theme by <a href="https://startbootstrap.com/template-overviews/clean-blog/">Start Bootstrap</a> | Baked with <a href="http://jbake.org">JBake <span>v2.6.1</span></a></p>
                     </div>
                 </div>
             </div>
@@ -241,23 +235,7 @@ You never know there is something you might like doing until you try it. Jekyll 
         <!-- Theme JavaScript -->
         <script src="js/clean-blog.min.js"></script>
 
-        <script>
-            (function (i, s, o, g, r, a, m) {
-                i['GoogleAnalyticsObject'] = r;
-                i[r] = i[r] || function () {
-                    (i[r].q = i[r].q || []).push(arguments)
-                }, i[r].l = 1 * new Date();
-                a = s.createElement(o),
-                        m = s.getElementsByTagName(o)[0];
-                a.async = 1;
-                a.src = g;
-                m.parentNode.insertBefore(a, m)
-            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-            ga('create', "UA-100343123-2", 'auto');
-            ga('send', 'pageview');
-
-        </script>
+        
 
     </body>
 
