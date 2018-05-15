@@ -1,4 +1,3 @@
 [submodule "docs"]
 	path = docs
 	url = git@github.com:SiddheshRane/SiddheshRane.github.io.git
-	branch = master
